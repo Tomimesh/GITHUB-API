@@ -1,14 +1,23 @@
+"use client";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+// import styles from "./App.module.css";
 import reportWebVitals from './reportWebVitals';
+import ErrorBoundary from './ErrorBoundary';
+// import { ErrorBoundary } from "react-error-boundary";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary>
+      <App>
+      </App>
+    </ErrorBoundary>
+
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
