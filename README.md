@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Github Repositories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Content :books: 
+---
+* [Description](#description)
+* [Requirements](#requirements)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Link](#link)
 
-## Available Scripts
+<a name="description"></a>
+### Description 🖼
 
-In the project directory, you can run:
+This is a project from the AltSchool Second Semester Examination. This repository makes use of the Github Repo API. The usage of the API was to fetch my GitHub repositories on a page and to fetch the individual repository when clicked using nested routing. In implementing a 404 Page, an invalid link is created. In implementing an Error Boundary Page, an international error was thrown. This is to meet the requirements.
 
-### `npm start`
+##### The project contains 4 main pages: 
+1. A Home Page.
+2. A Single Repository Page.
+3.  A 404 Page.
+4. A page to test the Error Boundary.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is in accordance with the set requirements. The pages are in the [Screenshot](#screenshots) content.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<a name="requirements"></a>
+### Requirements. ❗
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is the requirement for this project: ___
+Implement an API fetch of your GitHub portfolio, show a page with a list of all your repositories on GitHub, and create another page showing data for a single repo clicked from the page showing all repos using nested routes while using all the necessary tools in react. Implement an Error Boundary (show a page to test the error boundary) and 404 pages. Good UI and Designs are important. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a name="screenshots"></a>
+### Screenshots.📸
+* Home Page - All repositories fetched
+ 
+  ![Home Page](https://github.com/Thatgirl9/Kaychop-Restaurant/assets/108234015/6b32053b-d9b8-42f2-aa88-b2efc0f61d3f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Single Repository Page
+  
+  ![Single-Repo-Page](https://github.com/Thatgirl9/Kaychop-Restaurant/assets/108234015/e1cde3e7-0712-470a-b8ef-1ae9d977b5fd)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* 404 Page
 
-### `npm run eject`
+  ![404 Page](https://github.com/Thatgirl9/Kaychop-Restaurant/assets/108234015/b4a73822-f6be-4cc4-9e60-a7cdc3e63d3a)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Error Boundary Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ![Error-Boundary-Page](https://github.com/Thatgirl9/Kaychop-Restaurant/assets/108234015/254bcf51-9594-49ab-822b-18ea994bde4b)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<a name="technologies"></a>
+### Technologies.💻
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Create React App](https://create-react-app.dev/) - JavaScript Library
+* [Css Modules](https://github.com/css-modules/css-modules) - Styling
+* [React Feather](https://www.npmjs.com/package/react-feather) - Icons
+* [React-Router-Dom](https://reactrouter.com/en/main/start/tutorial) - Routing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<a name="link"></a>
+### Link.🔗
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##### [Live Demo](https://github-repositories-fetch.netlify.app/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
