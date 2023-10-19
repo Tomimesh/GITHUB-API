@@ -55,6 +55,10 @@ const RepoDetail = () => {
         </div>
         <div className={styles.reposBtnDiv}>
 
+          <a href={repo.homepage} target='_blank'>
+            <button className={styles.reposBtn}>View Live</button>
+          </a>
+
           <a href={repo.html_url}>
             <button className={styles.reposBtn}>View on GitHub</button>
           </a>
