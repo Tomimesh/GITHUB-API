@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './App.module.css';
+import Spinner from './Spinner';
+
 
 const Repository = () => {
   // * Create a state variable to hold the data from the API
@@ -11,6 +13,7 @@ const Repository = () => {
   // * Use useEffect to fetch data from github repository api using async/await and IIFE
 
   useEffect(() => {
+
     (async () => {
       try {
         const repoUrl = "https://api.github.com/users/thatgirl9";
@@ -28,7 +31,10 @@ const Repository = () => {
         setLoading(false);
       }
     })();
+
   }, []);
+
+
 
   return (
     <div>
@@ -36,7 +42,7 @@ const Repository = () => {
       <h1 className={styles.gitHeader}>My GitHub Repositories</h1>
       {
         loading ?
-          <div className={styles.love}>Loading...</div> :
+          <div className={styles.love}>Loading... <Spinner /></div> :
           (
             <div className={styles.repositories}>
               {repositories.map((repo) => (

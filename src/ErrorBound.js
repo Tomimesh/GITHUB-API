@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styles from "./App.module.css";
+import { Link } from "react-router-dom";
 
 
 const ErrorBound = () => {
@@ -25,7 +26,7 @@ const ErrorBound = () => {
         <h2>Ooops!</h2>
         <p>Error Occurred</p>
         <p><i className={styles.repoItalics}>From Error Boundary</i></p>
-
+        <a href='/'>Go back to Home Page</a>
       </div>
     </div>
   )

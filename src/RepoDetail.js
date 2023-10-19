@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import styles from './App.module.css';
 import { Link } from 'react-router-dom';
+import Spinner from './Spinner';
 
 const RepoDetail = () => {
   // * Create a variable for the repository selected
@@ -30,7 +31,7 @@ const RepoDetail = () => {
   }, [repoName]);
 
   if (!repo) {
-    return <div>Loading...</div>;
+    return <div className={styles.love}>Loading...<Spinner /></div>;
   }
 
 
