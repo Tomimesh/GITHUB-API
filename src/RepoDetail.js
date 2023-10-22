@@ -59,7 +59,7 @@ const RepoDetail = () => {
             <button className={styles.reposBtn}>View Live</button>
           </a>
 
-          <a href={repo.html_url}>
+          <a href={repo.html_url} target='_blank'>
             <button className={styles.reposBtn}>View on GitHub</button>
           </a>
           <Link to='/'>
