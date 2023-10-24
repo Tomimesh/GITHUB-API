@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/" component={Repository} />
             <Route path="/repos/:repoName" component={RepoDetail} />
             <Route path="/errorbound" component={ErrorBound} />
-            <Route component={ErrorPage} />
+            <Route path="*" component={ErrorPage} />
           </Switch>
         </div>
       </div>
