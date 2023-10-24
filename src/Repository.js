@@ -21,16 +21,39 @@ const Repository = () => {
         const repoEndPoint = `${repoUrl}/repos`;
         const response = await fetch(repoEndPoint);
 
-        const data = await response.json();
-        console.log(response);
-        console.log(data);
-        setRepositories(data);
+        //   const data = await response.json();
+        //   console.log(response);
+        //   console.log(data);
+        //   setRepositories(data);
+        // } catch (error) {
+        //   console.log(error);
+        // } finally {
+        //   setLoading(false);
+        // }
+
+        // try {
+        //   const response = await fetch('https://api.example.com/repositories');
+        if (response.ok) {
+          const data = await response.json();
+          // Ensure data is an array before setting it in state
+          if (Array.isArray(data)) {
+            setRepositories(data);
+          } else {
+            console.error('Data is not an array:', data);
+          }
+        } else {
+          console.error('Failed to fetch data:', response.status);
+        }
       } catch (error) {
-        console.log(error);
+        console.error('Error fetching data:', error);
       } finally {
         setLoading(false);
       }
+
+
+
     })();
+
 
   }, []);
 
