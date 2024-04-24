@@ -17,7 +17,7 @@ const RepoDetail = () => {
       try {
         // https://api.github.com/repos/:owner/:repo
         // https://api.github.com/repos/thatgirl9/${repoName}
-        const repoUrl = "https://api.github.com/repos/thatgirl9";
+        const repoUrl = "https://api.github.com/repos/Tomimesh";
         const repoEndPoint = `${repoUrl}/${repoName}`;
 
         const response = await fetch(repoEndPoint);

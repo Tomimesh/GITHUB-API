@@ -16,7 +16,7 @@ const Repository = () => {
 
     (async () => {
       try {
-        const repoUrl = "https://api.github.com/users/thatgirl9";
+        const repoUrl = "https://api.github.com/users/Tomimesh";
 
         const repoEndPoint = `${repoUrl}/repos`;
         const response = await fetch(repoEndPoint);

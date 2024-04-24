@@ -2,10 +2,10 @@
 
 :root {
   /* Colors */
-  --primary: #f1356d;
+  --primary: #f4ee32;
   --secondary: #fafafa;
   --dark: #333;
-  --hoverColor: #e85d7d;
+  --hoverColor: #5dbae8;
 }
 
 * {
